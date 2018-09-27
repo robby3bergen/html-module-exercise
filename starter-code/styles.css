@@ -1,0 +1,224 @@
+body {
+  font-family: 'Source Sans Pro', 'Lucida Grande', sans-serif;
+  margin: 0;
+}
+
+input {
+  outline: none; /*prevents the ugly outline from showing when the input has got focus */
+}
+
+nav {
+  background-color: #C12127;
+  color: rgb(255, 255, 255, 0.8);
+  padding-top: 15px;
+  height: 35px;
+  font-size: small;
+  overflow: hidden;
+}
+
+nav a {
+  color: rgb(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.top-left {
+  display: inline-block;
+  float: left;
+  padding: 0;
+  margin: 0 0 0 20px;
+}
+
+.top-left a, span {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.heart {
+  height: 0px; /* prevents the heart from expanding the div */
+}
+
+.top-links {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+header {
+  position: relative;
+  color: white;
+  background-color: rgb(32, 101, 136);
+}
+
+.bar {
+  clear: both;
+  width: 100%;
+  position: relative;
+}
+
+#npm-logo {
+  height: 35px;
+  width: 90px;
+  float: left;
+  margin: 6px;
+}
+
+#search-bar {
+  height: 35px;
+  float: left;
+  width: calc(100% - 300px); /* 100% - 90px (npm-logo) - 166px (sign-up-link) - 18 px (margin 6 x 3px) */
+  margin: 6px 0;
+  background-color: rgb(31, 82, 111);
+  border: 1px solid rgb(224, 224, 224, 0.3);
+  color: rgb(224, 224, 224, 0.8);
+}
+
+#sign-up-link {
+  height: 35px;
+  width: 180px;
+  line-height: 35px;
+  float: right;
+  margin: 6px;
+  text-decoration: none;
+  text-align: right;
+  color: rgb(224, 224, 224, 0.8);
+}
+
+#bear-logo {
+  height: 35px;
+  float: right;
+  margin-left: 6px;
+}
+
+.main {
+  clear: both;
+  width: 70%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.main * {
+  position: relative;
+  left: 30px;
+}
+
+/* question to my TA: why don't we use 'city-scape.svg' as a background image on the div? */
+.main img {
+  float: right;
+  left: auto; /* without this parameter the text breaks at the border of the image instead of showing on top of the image */
+  height: 339px;
+  width: 480px; /* smallest size at which the image expands */
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px 0;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-orange {
+  background-color: rgb(240, 146, 51);
+}
+
+.btn-red {
+  background-color: rgb(203, 56, 55);
+}
+
+.btn-blue {
+  background-color: rgb(49, 68, 88);
+}
+
+#collaboration {
+  /* clear: both; not necessary because the collaboration section is a new block formatting context */
+  background-color: rgb(39, 53, 71);
+  color: white;
+  overflow: auto; /* prevents losing background-color caused by the margin on the inner div overflowing the outer div */
+}
+
+#collaboration-container {
+  width: 70%;
+  margin: 50px auto;
+  overflow: auto;
+}
+
+#col-left {
+  /* display: inline-block; /* to position the divs next to each other */
+  float: left;
+  width: 47%;
+}
+
+#col-right {
+  width: 47%;
+  float: right;
+}
+
+#col-right h2 {
+  padding: 0 20px;
+}
+
+#col-right li {
+  margin: 20px 0;
+}
+
+#col-right a {
+  color: white;
+  text-decoration: none;
+}
+
+#what-is-npm {
+  height: 400px;
+  position: relative;
+  /* overflow: auto; */
+  background-image: url("images/forklift.svg");
+  background-size: cover;
+}
+
+#npm-container {
+  position: absolute;
+  width: 400px;
+  left: 20%;
+  top: 20%;
+  margin: 0;
+  color: white;
+}
+
+#what-can-you-make {
+  width: 100%;
+  background-color: white;
+  overflow: auto;
+}
+
+.wcym-container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(135, 145, 156);
+}
+
+.wcym-container h2 {
+  margin-top: 50px;
+}
+
+.wcym-container h3 {
+  color: rgb(83, 88, 98);
+}
+
+.wcym-col {
+  width: 33%;
+  min-width: 200px;
+  float: left;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.wcym-col a {
+  color: rgb(208, 74, 73);
+}
